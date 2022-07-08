@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/bstreeview.min.js"></script>
+    <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                /*
+        320px — 480px: Mobile devices
+        481px — 768px: iPads, Tablets
+        769px — 1024px: Small screens, laptops
+        1025px — 1200px: Desktops, large screens
+        1201px and more —  Extra large screens, TV
+        320px — 480px: Mobile devices */
+                body {
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .header {
+                    overflow: hidden;
+                    padding: 30px 10px;
+                    background-image: url('img/headerbackground.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                }
+
+                    .header a {
+                        float: left;
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                        padding: 12px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        line-height: 25px;
+                        border-radius: 4px;
+                    }
+
+                        .header a.logo {
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+
+                        .header a:hover {
+                            background-color: #ddd;
+                            color: black;
+                        }
+
+                        .header a.active {
+                            background-color: rgb(46, 177, 100);
+                            color: white;
+                        }
+
+                .header-right {
+                    float: right;
+                }
+
+                .header-center {
+                    text-align: center;
+                    color: rgb(255, 255, 255);
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                .blockquote {
+                    color: whitesmoke;
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+
+                #me {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+
+                .collapsible {
+                    background-color: rgb(46, 177, 100);
+                    color: white;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 15px;
+                }
+
+                    .active, .collapsible:hover {
+                        background-color: #555;
+                    }
+
+                .content {
+                    padding: 0 18px;
+                    display: none;
+                    overflow: hidden;
+                    background-color: #f1f1f1;
+                }
+    </style>
+</head>
+<body class="container">
+    <img id="me" style="width:100%" src="img/Lalaina_background.png">
+    <button type="button" class="collapsible">CONTACT</button>
+    <div class="content">
+        <p><strong>Address: </strong> Lot VP 9G Ambohimiandra.</p>
+        <p><strong>Ville: </strong>Antananarivo (Capitale).</p>
+        <p><strong>Pays: </strong>MADAGASCAR.</p>
+        <p><strong>Télephone: </strong>(+261) 34 34 142 07 | (+261) 34 11 970 85</p>
+        <p><strong>Email: </strong>andriamandaminalalaina@gmail.com</p>
+        <p><strong>LinkedIn: </strong><a href="https://mg.linkedin.com/in/lalaina-andriamandamina-a73421193" target="_blank">https://mg.linkedin.com/in/lalaina-andriamandamina-a73421193</a></p>
+        <p><strong>Langues: </strong>Malagasy - Français - Anglais</p>
+    </div>
+    <button type="button" class="collapsible">EXPERIENCE PROFESSIONNELLE</button>
+    <div class="content">
+        <button type="button" class="collapsible">Directeur Financier. - Colis Express S.A. Antananarivo - [ Janvier 2019 – Février 2022 ]</button>
+        <div class="content">
+            <p><a href="http://www.colis-express-sa.com/" target="_blank">Colis Express S.A. Antananarivo </a></p>
+            <p><img id="colis" style="width:10%" src="img/colis.jpg"></p>
+            <p><i>(Prestataire de Service en transport et livraison de marchandise général)</i></p>
+            <p>
+                -Montage des Bilans et divers Etats Financiers (Compte
+                de résultat, Evaluation capitaux propres, Tableau de
+                Gestion à caractéristique de Gestion, Impôt sur le
+                Bénéfices des sociétés…etc.)
+            </p>
+            <p>
+                -Supervision et Suivi des dépenses et des recettes de la
+                société.
+            </p>
+            <p>
+                -Contrôle de la trésorerie et des liquidités en banque,
+                reporting hebdomadaire et mensuel de la société.
+            </p>
+            <p>
+                -Montage et Elaboration des budgets (Tableau de bord
+                de suivi en respectant les lignes budgétaires).
+            </p>
+            <p>
+                -Contrôle et suivi des paiements pour les déclarations
+                fiscales suivant le planning donné par le DGE/ DGI.
+            </p>
+            <p>-Supervision de 03 Départements Financiers :</p>
+            <p>
+                1 : Département Comptabilité : Suivi imputation
+                comptable, l’apurement des exercices, la régularisation
+                des écritures venant des auditeurs et commissaires aux
+                comptes, contrôle caisse mensuel et annuel.
+            </p>
+            <p>
+                2 : Département Recouvrement : Suivi des paiements
+                des clients (échu et non échu), Elaboration du tableau
+                de Bord à présenter lors de la Réunion des Conseils
+                d’administration, Tableau Prévisionnel pour les
+                paiements, et les calendriers des plannings
+                prévisionnels hebdomadaires.
+            </p>
+            <p>
+                3 : Département Facturation : Supervision et suivi des
+                factures, contrat avec les clients (Négociation sur les
+                remises, rabais, ristournes…), délais des paiements
+                (Court, long et Moyen terme).
+            </p>
+        </div>
+        <button type="button" class="collapsible">Directeur Administratif et Financier. - SANGANY - [Mars 2011- Décembre 2018]</button>
+        <div class="content">
+            
+            <p><i>(Exportation de Girofle, de café et de vanille à Madagascar)</i><p>
+            <p>-Supervision de 03 Départements Financiers :</p>
+            <p>
+                1-Département Administratif : Suivi des gestions de
+                contrat des clients, Gestions des paies et du personnel,
+                suivi des stocks et des divers achats pour le
+                fonctionnement de la société.
+            </p>
+            <p>
+                2-Département Finance : Etablissements des divers
+                rapports : Etats Financiers, Budget Prévisionnel,
+                Reporting semestriel (Haute saison et basse saison),
+                rapport d’audit, Bilan semestriel et annuel.
+            </p>
+            <p>
+                3-Département Logistique et Magasin : Suivi et Contrôle
+                des stocks.
+            </p>
+        </div>
+        <button type="button" class="collapsible">Adjoint Directeur Financier. - Madagascar National Parks - [Mars 2009 – Janvier 2011]</button>
+        <div class="content">
+            <p><a href="https://www.parcs-madagascar.com/" target="_blank">Madagascar National Parks</a></p>
+            <p><img id="mnp" style="width:10%" src="img/mnp.png"></p>
+            <p><i>(Association Nationale pour la gestion des Aires protegées.)</i></p>
+            <p>
+                1-Mobilisation et contrôle de la Trésorerie :
+            </p>
+            <p>
+                -En collaboration avec l’Unité Trésorerie du Siège,
+                approvisionner les comptes bancaires des Unités de
+                Gestion en fonction de leur programme et des
+                procédures.
+            </p>
+            <p>
+                -Effectuer le suivi de l’évolution des plans de trésorerie
+                et analyser les écarts par rapports aux réalisations.
+                -Suivre et veiller à la préparation des dossiers d’Appel
+                de Fonds spécifiques aux bailleurs de fonds.
+            </p>
+            <p>
+                -Suivre et améliorer les procédures de gestion des
+                décaissements au niveau des unités de gestion.
+            </p>
+            <p>2- Suivi des Comptes bancaires :</p>
+            <p>
+                -Participer à la négociation et effectuer le contrôle des
+                conditions bancaires.
+            </p>
+            <p>
+                -Effectuer le suivi et le contrôle des extraits de comptes
+                bancaires pour tous les réseaux.
+            </p>
+            <p>
+                -Réaliser le suivi des soldes bancaires, l’équilibrage des
+                comptes et surtout les placements à court terme.
+            </p>
+            <p>
+                -Effectuer la mise à jour du répertoire des délégations de
+                signatures bancaires en cas d’une abrogation d’un
+                pouvoir d’un signataire.
+            </p>
+            <p>
+                3- Analyse et Appui à la Gestion Financière :
+            </p>
+            <p>
+                -Organiser le suivi de la situation mensuelle des recettes
+                et des dépenses des Unités de Gestion et la
+                communiquer au DAF (Directeur Administratif et
+                Financier) et à la Direction Générale en cas d’absence
+                du DAF.
+            </p>
+            <p>
+                -Organiser le suivi des comptes fournisseurs et leur
+                apurement par Unité de Gestion.
+            </p>
+            <p>
+                -Organiser le suivi et recouvrement des créances du
+                M.N.P
+            </p>
+            <p>
+                -Recommander et mettre en œuvre toute action
+                corrective et/ou de renforcement de la situation
+                financière avec le DAF et de la Direction générale pour
+                éviter de mettre en péril l’équilibrage général de
+                l’Organisme, face à ses engagements financiers.
+            </p>
+            <p>
+                4- Reporting :
+            </p>
+            <p>
+                -Etablissement des rapports financiers en assurant que
+                l’exécution des accords est conforme aux paramètres
+                convenus au début des accords de financement, de
+                même pour les fermetures des projets initiés par
+                l’Organisme.
+            </p>
+            <p>
+                -Participation à l’établissement et à l’analyse des états
+                financiers consolidés et à la mise en œuvre des actions
+                recommandés en gestion financière qu’en contrôle
+                interne.
+            </p>
+            <p>
+                5-Planification :
+            </p>
+            <p>
+                -Montage des budgets annuels d’exploitation et
+                d’investissements par unité de gestion.
+            </p>
+            <p>
+                -Aider les unités de gestion à élaborer leur plan de
+                trésorerie.
+            </p>
+            <p>
+                -Garantir la prévision mensuelle de la trésorerie.
+            </p>
+            <p>
+                -Rassembler et exploiter tous les documents de
+                référence des financements disponibles.
+            </p>
+            <p>
+                -Assurer le suivi et la préparation des dossiers de
+                passations de marché sur chaque bailleur de fonds.
+            </p>
+        </div>
+        <button type="button" class="collapsible">Responsable Administrative et Financière. - TIKO SARL Madagascar - [Octobre 2006 – Décembre 2008]</button>
+        <div class="content">
+            <p><a href="http://tiko-vita-malagasy.com/index.html" target="_blank">TIKO Madagascar</a></p>
+            <p><img id="mnp" style="width:10%" src="img/Tiko.png"></p>
+            <p><i>(Production et Vente de produits agroalimentaires)</i></p>
+            <p>-Diriger l’équipe du département financière.</p>
+            <p>
+                -Faire le suivi et analyse des recettes et dépenses
+                (siège et antennes).
+            </p>
+            <p>
+                -Contrôle des écritures comptables et suivi des contrats
+                financiers.
+            </p>
+            <p>
+                -Assure les relations bancaires et affaires administratifs.
+            </p>
+            <p>
+                -Suivi des comptes fournisseurs, consultants et
+                prestataires.
+            </p>
+        </div>
+        <button type="button" class="collapsible">Analyste Financière. - Banque BRED France - [Janvier 2006 – Septembre 2006]</button>
+        <div class="content">
+            <p><a href="https://www.bred.fr/les-agences/9349" target="_blank">Banque Bred Strasbourg - France</a></p>
+            <p><img id="mnp" style="width:20%" src="img/bred.png"></p>
+            <p><i>(Etablissement Financier – Banque Primaire)</i></p>
+            <p>Participation à la préparation du budget de trésorerie.</p>
+            <p>
+                -Assurer le déblocage des fonds pour le prêt et faire le
+                reporting après décaissement.
+            </p>
+            <p>
+                -Superviser le renouvellement des crédits.
+            </p>
+            <p>
+                -Suivi des dossiers de prêts.
+            </p>
+            <p>
+                -Proposer et résoudre les problèmes d’encadrement de
+                crédit.
+            </p>
+        </div>
+    </div>
+    <button type="button" class="collapsible">DIPLÔMES & CERTIFICATS</button>
+        <div class="content">
+            <button type="button" class="collapsible">DIPLÔMES</button>
+            <div class="content">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titres</th>
+                    <th scope="col">Etablissements</th>
+                    <th scope="col">Liens</th>
+                    <th scope="col">Dates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><strong>Master II </strong><p><u>Mention</u>: Affaires Internationales.</p><p><u>Spécialité</u>: Banque et Finance Internationale.</p><p><u>Domaine</u>: Economie, Gestion et Commerce</p> </td>
+                    <td>Université du Havre - France</td>
+                    <td><a href="https://www.univ-lehavre.fr/" target="_blank">Université du Havre</a></td>
+                    <td>2006</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><strong>D.E.P.A</strong><p>Diplôme d’Etudes Professionnelles Approfondies. </p></td>
+                    <td>ISCAM: Institut Supérieur de la Communication, des Affaires et du Management - Madagascar.</td>
+                    <td><a href="https://www.iscam.mg/" target="_blank">ISCAM - Madagascar.</a></td>
+                    <td>2004</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><strong>D.E.S</strong> <p>Diplôme d’Etudes Supérieurs </p></td>
+                    <td>ISCAM: Institut Supérieur de la Communication, des Affaires et du Management - Madagascar.</td>
+                    <td><a href="https://www.iscam.mg/" target="_blank">ISCAM - Madagascar.</a></td>
+                    <td>2002</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="button" class="collapsible">CERTIFICATS</button>
+            <div class="content">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Certification</th>
+                    <th scope="col">Etablissements</th>
+                    <th scope="col">Liens</th>
+                    <th scope="col">Dates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><strong>Contrôle Fiscal et l’après contrôle Fiscal.</strong></td>
+                    <td>Chambre de Commerce et d’Industrie. Antananarivo Madagascar.</td>
+                    <td><a href="http://cpccaf.org/XCMD.RE9fU2hPQko8MjU+MDAwMDAtMC0wMjItMDAwMDAwMDAyNTg0MQ==" target="_blank">cpccaf</a></td>
+                    <td>Septembre 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><strong>Elaboration et Suivi Budgétaire</strong></td>
+                    <td>Chambre de Commerce et d’Industrie. Antananarivo Madagascar.</td>
+                    <td><a href="http://cpccaf.org/XCMD.RE9fU2hPQko8MjU+MDAwMDAtMC0wMjItMDAwMDAwMDAyNTg0MQ==" target="_blank">cpccaf</a></td>
+                    <td>Janvier 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><strong>Permis de Conduire – Catégorie B</strong></td>
+                    <td>Centre Immatriculateur Ambohidahy (CIM). Antananarivo Madagascar.</td>
+                    <td><a href="https://www.facebook.com/people/Centre-Immatriculateur-dAntananarivo/100068916712020/" target="_blank">CIM - Facebook</a></td>
+                    <td>2006</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <a href="https://www.odoo.com/fr_FR" target="_blank"><img id="odoo_logo" style="width:100%" src="img/odoo_logo.png"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://www.ciel.com/" target="_blank"><img id="logiciel-ciel-sage" style="width:100%" src="img/logiciel-ciel-sage.png"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://www.ebp.com/logiciel-comptabilite" target="_blank"><img id="EBP-logo" style="width:100%" src="img/EBP-logo.png"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://www.sage.com/fr-fr/" target="_blank"><img id="sage" style="width:100%" src="img/sage.png"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://tomate.com/logiciels/tom2-pro_1" target="_blank"><img id="tompro" style="width:100%" src="img/tompro.png"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://www.office.com/" target="_blank"><img id="office" style="width:100%" src="img/office.png"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
